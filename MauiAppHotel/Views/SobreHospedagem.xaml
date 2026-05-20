@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobreHospedagem"
+             Title="SobreHospedagem"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Purple200}">
+
+    <VerticalStackLayout>
+      
+        <Label
+            Text="Pousada Púrpura"
+            FontFamily="Fleur"
+            FontSize="60"
+            TextColor="{StaticResource Purple100}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Sobre"
+            FontFamily="Kalam"
+            FontSize="50"
+            TextColor="{StaticResource Purple100}"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+
+        <Frame Padding="10" Background="Transparent">
+            <VerticalStackLayout>
+                <Grid RowDefinitions="*, *, *, *, *, *, *, *"
+              ColumnDefinitions="*" >
+
+                    <Label Grid.Row="0" Grid.Column="0"
+                        Text="A Pousada Púrpura nasceu do desejo de criar" 
+                           FontFamily="Courgette"
+                           FontSize="20"
+                           TextColor="{StaticResource Purple100}"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"/>
+
+                    <Label Grid.Row="1" Grid.Column="0"
+                        Text="um refúgio acolhedor, onde cada detalhe transmite"
+                           FontFamily="Courgette"
+                           FontSize="20"
+                           TextColor="{StaticResource Purple100}"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"/>
+
+                    <Label Grid.Row="2" Grid.Column="0"
+                        Text="tranquilidade, conforto e leveza. Inspirada no"
+                           FontFamily="Courgette"
+                           FontSize="20"
+                           TextColor="{StaticResource Purple100}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center" />
+
+                    <Label Grid.Row="3" Grid.Column="0"
+                        Text="charme das hospedagens caseiras, nossa pousada"
+                           FontFamily="Courgette"
+                           FontSize="20"
+                           TextColor="{StaticResource Purple100}"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center" />
+
+                    <Label Grid.Row="4" Grid.Column="0"
+                        Text="combina simplicidade, delicadeza e um ambiente"
+                           FontFamily="Courgette"
+                           FontSize="20"
+                           TextColor="{StaticResource Purple100}"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center" />
+
+                    <Label Grid.Row="5" Grid.Column="0"
+                        Text="familiar que faz cada visitante se sentir em casa"
+                           FontFamily="Courgette"
+                           FontSize="20"
+                           TextColor="{StaticResource Purple100}"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center" />
+
+                    <Label Grid.Row="6" Grid.Column="0"
+                        Text="desde o primeiro instante."
+                           FontFamily="Courgette"
+                           FontSize="20"
+                           TextColor="{StaticResource Purple100}"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center" />
+                    
+                    <Label Grid.Row="10" Grid.Column="0"
+                           Margin="20"
+                           FontFamily="Courgette"
+                           FontSize="20"
+                           TextColor="{StaticResource Purple100}"
+                           VerticalOptions="Center" 
+                           HorizontalOptions="Center"
+                           Text="Esta pousada foi constrúida Emilie Williams para trazer um recanto de conforto para todos os seus hóspedes desde 27 de Junho de 2015" />
+
+                </Grid>
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
