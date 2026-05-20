@@ -1,9 +1,21 @@
 namespace MauiAppHotel.Views;
 
-public partial class HosedagemContratada : ContentPage
+public partial class HospedagemContratada : ContentPage
 {
-	public HosedagemContratada()
+	public HospedagemContratada()
 	{
-		InitializeComponent();
+        InitializeComponent();
 	}
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+		try
+		{
+			Navigation.PopAsync();
+
+		} catch (Exception ex)
+		{
+			DisplayAlert("Ops", ex.Message, "OK");
+		}
+    }
 }
