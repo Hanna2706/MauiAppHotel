@@ -3,26 +3,56 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.EstadiaHospedagem"
              Title="EstadiaHospedagem"
-             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource Purple200}">
-    <VerticalStackLayout>
+    
+    <VerticalStackLayout Padding="10">
         <Label Text="Pousada Púrpura"
                FontFamily="Fleur"
-               FontSize="50"
+               FontSize="60"
                TextColor="{StaticResource Purple100}"
-               VerticalOptions="Center"
                HorizontalOptions="Center"/>
+        
         <Label 
             Text="Estádia"
             TextColor="{StaticResource Purple100}"
             FontFamily="Courgette"
             FontSize="50"
-            VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Label
+            Text="O que está incluso em nossa estádia:"
+            TextColor="{StaticResource Purple100}"
+            FontSize="20"
+            FontFamily="Courgette"
+            HorizontalOptions="Center"/>
+
+        <Border Padding="10"
+                StrokeShape="RoundRectangle 10">
+
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto, Auto, Auto">
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Refeições" TextColor="{StaticResource Purple100}"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Café da Manhã" TextColor="{StaticResource Purple300}"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="Almoço" TextColor="{StaticResource Purple300}"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="Jantar" TextColor="{StaticResource Purple300}"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Entrenimento" TextColor="{StaticResource Purple100}"/>
+
+                <Label Grid.Row="3" Grid.Column="0" Text="Passeios a cavalo" TextColor="{StaticResource Purple100}"/>
+                <Label Grid.Row="3" Grid.Column="1" Text="Piscina" TextColor="{StaticResource Purple300}"/>
+                <Label Grid.Row="3" Grid.Column="2" Text="Recanto dos animais" TextColor="{StaticResource Purple300}"/>
+                
+            </Grid>
+        </Border>
+       
 
         <Button 
             Margin="10"
             Text="Voltar" 
+            TextColor="{StaticResource Purple300}"
             Clicked="Button_Clicked"
             BackgroundColor="{StaticResource Purple100}"
             FontFamily="Kalam"

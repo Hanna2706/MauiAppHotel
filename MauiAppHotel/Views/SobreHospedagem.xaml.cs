@@ -16,7 +16,7 @@ public partial class SobreHospedagem : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Ops", ex.Message, "OK");
+            DisplayAlertAsync("Ops", ex.Message, "OK");
         }
     }
 }

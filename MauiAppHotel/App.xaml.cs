@@ -4,13 +4,13 @@ namespace MauiAppHotel
 {
     public partial class App : Application
     {
-        public List<Quarto> Lista_quartos = new List<Quarto>()
+        public static List<Quarto> Lista_quartos = new ()
         {
             new Quarto()
             {
                 Descricao = "Suíte Super Luxo",
-                ValorDiariaAdulto = 80.0,
-                ValorDiariaCrianca = 40.0
+                ValorDiariaAdulto = 100.0,
+                ValorDiariaCrianca = 50.0
             },
             new Quarto()
             {
@@ -35,17 +35,16 @@ namespace MauiAppHotel
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.TelaInicial());
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            var window = base.CreateWindow(activationState);
+            var w = new Window(new AppShell());
 
-            window.Width = 400;
-            window.Height = 600;
+            w.Width = 350;
+            w.Height = 700;
 
-            return window;
+            return w;
         }
     }
 }

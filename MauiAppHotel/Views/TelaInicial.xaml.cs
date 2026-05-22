@@ -16,7 +16,7 @@ public partial class TelaInicial : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Ops", ex.Message, "OK");
+            DisplayAlertAsync("Ops", ex.Message, "OK");
         }
     }
 
@@ -29,7 +29,7 @@ public partial class TelaInicial : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Ops", ex.Message, "OK");
+            DisplayAlertAsync("Ops", ex.Message, "OK");
         }
     }
 
@@ -42,7 +42,7 @@ public partial class TelaInicial : ContentPage
         }
         catch (Exception ex)
         {
-            DisplayAlert("Ops", ex.Message, "OK");
+            DisplayAlertAsync("Ops", ex.Message, "OK");
         }
     }
 }

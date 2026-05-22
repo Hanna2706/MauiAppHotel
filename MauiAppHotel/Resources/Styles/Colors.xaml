@@ -44,4 +44,6 @@
 
     <Color x:Key="Purple100">#660033</Color>
     <Color x:Key="Purple200">#FF66B2</Color>
+    <Color x:Key="Purple300">#FFA8D9</Color>
+    <Color x:Key="Purple400">#FFE0FF</Color>
 </ResourceDictionary>

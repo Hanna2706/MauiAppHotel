@@ -3,32 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
-             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource Purple200}">
 
-    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+    <VerticalStackLayout VerticalOptions="Center"
                          Padding="10">
         <Label Text="Pousada Púrpura"
                FontFamily="Fleur"
-               FontSize="60"
+               FontSize="50"
                TextColor="{StaticResource Purple100}"
-               VerticalOptions="Center"
                HorizontalOptions="Center"/>
 
         <Label Text="Cálculo da Diária"
                FontFamily="Courgette"
-               FontSize="50"
+               FontSize="40"
                TextColor="{StaticResource Purple100}"
                VerticalOptions="Center"
                HorizontalOptions="Center"/>
 
-        <Frame Padding="10">
+        <Border Padding="10"
+                Margin="5"
+                StrokeShape="RoundRectangle 10"
+                BackgroundColor="{StaticResource Purple400}">
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 2*">
 
                     <Label Grid.Row="0" Grid.Column="0"
-                           Text="Adultos:" />
+                           Text="Adultos:"
+                           TextColor="{StaticResource Purple100}"/>
 
                     <Label Grid.Row="0" Grid.Column="1"
                            TextColor="{StaticResource Purple100}"
@@ -42,7 +45,8 @@
                              Increment="1" />
 
                     <Label Grid.Row="1" Grid.Column="0"
-                           Text="Crianças:"/>
+                           Text="Crianças:"
+                           TextColor="{StaticResource Purple100}"/>
 
                     <Label Grid.Row="1" Grid.Column="1"
                            TextColor="{StaticResource Purple100}"
@@ -56,34 +60,64 @@
                              Increment="1" />
                 </Grid>
 
-                <Label Text="Escolha sua Suíte" />
-
-                <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação"
-                        ItemDisplayBinding="{Binding Descricao}"/>
-
-                <Frame Padding="10"
-                       Margin="10">
+                <Border Padding="10" 
+                        StrokeShape="RoundRectangle 10" 
+                        Margin="5"
+                        BackgroundColor="{StaticResource Purple100}">
                     <VerticalStackLayout>
-                        <Label Text="Período da Estadia" />
+                        
+                        <Label Text="Escolha sua Suíte"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource Purple200}"
+                               HorizontalOptions="Center"/>
+
+                        <Picker x:Name="pck_quarto"
+                                Title="Selecione sua Acomodação"
+                                TitleColor="{StaticResource Purple300}"
+                                ItemDisplayBinding="{Binding Descricao}"
+                                BackgroundColor="{StaticResource Purple300}"/>
+                        
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Padding="10"
+                        StrokeShape="RoundRectangle 10"
+                        Margin="5"
+                        BackgroundColor="{StaticResource Purple100}">
+                    <VerticalStackLayout>
+                        <Label Text="Período da Estadia" 
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource Purple200}"
+                               HorizontalOptions="Center"
+                               Margin="5"/>
 
                         <HorizontalStackLayout>
-                            <Label Text="Check-in:" />
+                            <Label Text="Check-in:" 
+                                   TextColor="{StaticResource Purple300}"
+                                   Margin="12"/>
                             <DatePicker x:Name="dtpck_checkin"
-                                        Format="dd/MM/yyyy" />
+                                        DateSelected="dtpck_checkin_DateSelected"
+                                        Format="dd/MM/yyyy" 
+                                        BackgroundColor="{StaticResource Purple300}"/>
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout>
-                            <Label Text="Check-out:" />
+                        <HorizontalStackLayout Margin="5">
+                            <Label Text="Check-out:"
+                                   TextColor="{StaticResource Purple300}"
+                                   Margin="5"/>
                             <DatePicker x:Name="dtpck_checkout" 
-                                        Format="dd/MM/yyyy" />
+                                        Format="dd/MM/yyyy"
+                                        BackgroundColor="{StaticResource Purple300}"/>
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
-                </Frame>
+                </Border>
 
                 <Button 
                     Margin="10" 
                     Text="Avançar" 
+                    TextColor="{StaticResource Purple300}"
                     Clicked="Button_Clicked"
                     BackgroundColor="{StaticResource Purple100}"
                     FontFamily="Kalam"
@@ -92,12 +126,13 @@
                 <Button 
                     Margin="10" 
                     Text="Voltar" 
+                    TextColor="{StaticResource Purple300}"
                     Clicked="Button_Clicked_1"
                     BackgroundColor="{StaticResource Purple100}"
                     FontFamily="Kalam"
                     FontSize="18"/>
 
             </VerticalStackLayout>
-        </Frame>
+        </Border>
     </VerticalStackLayout>
 </ContentPage>

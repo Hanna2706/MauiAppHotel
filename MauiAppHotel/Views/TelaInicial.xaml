@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.TelaInicial"
              Title="TelaInicial"
-             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource Purple200}">
     <VerticalStackLayout Padding="10">
         <Label Text="Pousada Púrpura"
@@ -20,7 +20,7 @@
                VerticalOptions="Center"
                HorizontalOptions="Center"/>
 
-        <Label Text=" onde quem busca um refúgio pode se abrigar"
+        <Label Text=" onde quem busca um refúgio, pode se abrigar"
                Margin="10"
                FontFamily="Courgette"
                FontSize="20"
@@ -31,6 +31,7 @@
         <Button 
             Margin="10" 
             Text="Sobre" 
+            TextColor="{StaticResource Purple300}"
             Clicked="Button_Clicked"
             BackgroundColor="{StaticResource Purple100}"
             FontFamily="Kalam"
@@ -39,6 +40,7 @@
         <Button 
             Margin="10" 
             Text="Cálculo da Diária" 
+            TextColor="{StaticResource Purple300}"
             Clicked="Button_Clicked_1"
             BackgroundColor="{StaticResource Purple100}"
             FontFamily="Kalam"
@@ -47,6 +49,7 @@
         <Button 
             Margin="10"
             Text="Estádia"
+            TextColor="{StaticResource Purple300}"
             Clicked="Button_Clicked_2"
             BackgroundColor="{StaticResource Purple100}"
             FontFamily="Kalam"

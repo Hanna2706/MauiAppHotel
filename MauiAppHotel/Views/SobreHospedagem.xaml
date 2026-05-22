@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.SobreHospedagem"
              Title="SobreHospedagem"
-             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource Purple200}">
 
     <VerticalStackLayout Padding="10">
@@ -13,7 +13,6 @@
             FontFamily="Fleur"
             FontSize="60"
             TextColor="{StaticResource Purple100}"
-            VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
         <Label 
@@ -92,13 +91,14 @@
                            TextColor="{StaticResource Purple100}"
                            VerticalOptions="Center" 
                            HorizontalOptions="Center"
-                           Text="Esta pousada foi constrúida Emilie Williams para trazer um recanto de conforto para todos os seus hóspedes desde 27 de Junho de 2015" />
+                           Text="Esta pousada foi construída por Emilie Williams para trazer um recanto de conforto para todos os seus hóspedes desde 27 de Junho de 2015" />
 
                 </Grid>
 
                 <Button 
                     Margin="10"
                     Text="Voltar" 
+                    TextColor="{StaticResource Purple300}"
                     Clicked="Button_Clicked"
                     BackgroundColor="{StaticResource Purple100}"
                     FontFamily="Kalam"

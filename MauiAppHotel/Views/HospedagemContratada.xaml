@@ -3,60 +3,80 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.HospedagemContratada"
              Title="HospedagemContratada"
-             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource Purple200}">
              
     <VerticalStackLayout Padding="10">
         <Label Text="Pousada Púrpura"
-        FontFamily="Fleur"
-        FontSize="50"
-        TextColor="{StaticResource Purple100}"
-        VerticalOptions="Center"
-        HorizontalOptions="Center"/>
+               Margin="10"
+               FontFamily="Fleur"
+               FontSize="60"
+               TextColor="{StaticResource Purple100}"
+               HorizontalOptions="Center"/>
         <Label 
             Text="Suíte Super Luxo"
+            Margin="10"
             TextColor="{StaticResource Purple100}"
             FontFamily="Courgette"
             FontSize="50"
             HorizontalOptions="Center" />
 
-        <Frame Margin="10">
+        <Border 
+            Padding="10"
+            StrokeShape="RoundRectangle 10"
+            Margin="10"
+            BackgroundColor="{StaticResource Purple100}"
+            >
             <HorizontalStackLayout>
                 <HorizontalStackLayout>
-                    <Label Text="Adultos: "/>
-                    <Label Text="2"
+                    <Label Text="Adultos: "
                            TextColor="{StaticResource Purple200}"/>
+                    <Label Text="2"
+                           TextColor="{StaticResource Purple300}"/>
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout>
-                    <Label Text="Crianças: "/>
-                    <Label Text="1"
+                    <Label Text="Crianças: "
                            TextColor="{StaticResource Purple200}"/>
+                    <Label Text="1"
+                           TextColor="{StaticResource Purple300}"/>
                 </HorizontalStackLayout>
             </HorizontalStackLayout>
-        </Frame>
+        </Border>
 
-        <Frame Margin="10">
+        <Border 
+            Padding="10"
+            StrokeShape="RoundRectangle 10"
+            Margin="10"
+            BackgroundColor="{StaticResource Purple100}"
+            >
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:"/>
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" TextColor="{StaticResource Purple200}"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" TextColor="{StaticResource Purple200}"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia" TextColor="{StaticResource Purple200}"/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="3"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024" TextColor="{StaticResource Purple300}"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" TextColor="{StaticResource Purple300}"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="3" TextColor="{StaticResource Purple300}"/>
             </Grid>
-        </Frame>
+        </Border>
 
-        <Frame Margin="10">
+        <Border Margin="10"
+                StrokeShape="RoundRectangle 10"
+                Padding="10"
+                BackgroundColor="{StaticResource Purple100}"
+                >
             <HorizontalStackLayout>
-                <Label Text="Valor Total:"/>
-                <Label Text="R$ 750,00"/>
+                <Label Text="Valor Total:"
+                       TextColor="{StaticResource Purple200}"/>
+                <Label Text="R$ 750,00"
+                       TextColor="{StaticResource Purple300}"/>
             </HorizontalStackLayout>
-        </Frame>
+        </Border>
 
         <Button Text="Voltar"
+                TextColor="{StaticResource Purple300}"
                 HorizontalOptions="Center"
                 Clicked="Button_Clicked"
                 BackgroundColor="{StaticResource Purple100}"
