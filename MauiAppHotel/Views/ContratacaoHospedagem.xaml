@@ -5,18 +5,18 @@
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource Purple200}">
-    
+
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
         <Label Text="Pousada Púrpura"
                FontFamily="Fleur"
-               FontSize="50"
+               FontSize="60"
                TextColor="{StaticResource Purple100}"
                VerticalOptions="Center"
                HorizontalOptions="Center"/>
-        
+
         <Label Text="Cálculo da Diária"
-               FontFamily="Kalam"
+               FontFamily="Courgette"
                FontSize="50"
                TextColor="{StaticResource Purple100}"
                VerticalOptions="Center"
@@ -70,20 +70,33 @@
                         <HorizontalStackLayout>
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
-                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
                             <Label Text="Check-out:" />
-                            <DatePicker x:Name="dtpck_checkout"
-                Format="dd/MM/yyyy" />
+                            <DatePicker x:Name="dtpck_checkout" 
+                                        Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" Clicked="Button_Clicked" />
-                
+                <Button 
+                    Margin="10" 
+                    Text="Avançar" 
+                    Clicked="Button_Clicked"
+                    BackgroundColor="{StaticResource Purple100}"
+                    FontFamily="Kalam"
+                    FontSize="18"/>
+
+                <Button 
+                    Margin="10" 
+                    Text="Voltar" 
+                    Clicked="Button_Clicked_1"
+                    BackgroundColor="{StaticResource Purple100}"
+                    FontFamily="Kalam"
+                    FontSize="18"/>
+
             </VerticalStackLayout>
         </Frame>
     </VerticalStackLayout>

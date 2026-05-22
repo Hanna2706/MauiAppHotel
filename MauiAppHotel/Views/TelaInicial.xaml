@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.TelaInicial"
+             Title="TelaInicial"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Purple200}">
+    <VerticalStackLayout Padding="10">
+        <Label Text="Pousada Púrpura"
+               FontFamily="Fleur"
+               FontSize="60"
+               TextColor="{StaticResource Purple100}"
+               HorizontalOptions="Center"/>
+
+        <Label Text="Um recanto de conforto,"
+               Margin="10"
+               FontFamily="Courgette"
+               FontSize="20"
+               TextColor="{StaticResource Purple100}"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Label Text=" onde quem busca um refúgio pode se abrigar"
+               Margin="10"
+               FontFamily="Courgette"
+               FontSize="20"
+               TextColor="{StaticResource Purple100}"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Button 
+            Margin="10" 
+            Text="Sobre" 
+            Clicked="Button_Clicked"
+            BackgroundColor="{StaticResource Purple100}"
+            FontFamily="Kalam"
+            FontSize="18"/>
+
+        <Button 
+            Margin="10" 
+            Text="Cálculo da Diária" 
+            Clicked="Button_Clicked_1"
+            BackgroundColor="{StaticResource Purple100}"
+            FontFamily="Kalam"
+            FontSize="18"/>
+
+        <Button 
+            Margin="10"
+            Text="Estádia"
+            Clicked="Button_Clicked_2"
+            BackgroundColor="{StaticResource Purple100}"
+            FontFamily="Kalam"
+            FontSize="18"/>
+    </VerticalStackLayout>
+</ContentPage>

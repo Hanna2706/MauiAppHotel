@@ -6,7 +6,7 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource Purple200}">
 
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="10">
       
         <Label
             Text="Pousada Púrpura"
@@ -18,7 +18,7 @@
 
         <Label 
             Text="Sobre"
-            FontFamily="Kalam"
+            FontFamily="Courgette"
             FontSize="50"
             TextColor="{StaticResource Purple100}"
             VerticalOptions="Center"
@@ -95,6 +95,14 @@
                            Text="Esta pousada foi constrúida Emilie Williams para trazer um recanto de conforto para todos os seus hóspedes desde 27 de Junho de 2015" />
 
                 </Grid>
+
+                <Button 
+                    Margin="10"
+                    Text="Voltar" 
+                    Clicked="Button_Clicked"
+                    BackgroundColor="{StaticResource Purple100}"
+                    FontFamily="Kalam"
+                    FontSize="18"/>
             </VerticalStackLayout>
         </Frame>
     </VerticalStackLayout>

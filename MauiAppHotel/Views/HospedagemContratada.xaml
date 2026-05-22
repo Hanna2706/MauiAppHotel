@@ -6,7 +6,13 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource Purple200}">
              
-    <VerticalStackLayout>
+    <VerticalStackLayout Padding="10">
+        <Label Text="Pousada Púrpura"
+        FontFamily="Fleur"
+        FontSize="50"
+        TextColor="{StaticResource Purple100}"
+        VerticalOptions="Center"
+        HorizontalOptions="Center"/>
         <Label 
             Text="Suíte Super Luxo"
             TextColor="{StaticResource Purple100}"
@@ -52,6 +58,9 @@
 
         <Button Text="Voltar"
                 HorizontalOptions="Center"
-                Clicked="Button_Clicked"/>
+                Clicked="Button_Clicked"
+                BackgroundColor="{StaticResource Purple100}"
+                FontFamily="Kalam"
+                FontSize="18"/>
     </VerticalStackLayout>
 </ContentPage>
