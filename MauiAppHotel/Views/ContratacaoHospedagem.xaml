@@ -25,6 +25,7 @@
                 Margin="5"
                 StrokeShape="RoundRectangle 10"
                 BackgroundColor="{StaticResource Purple400}">
+            
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 2*">

@@ -28,27 +28,80 @@
             HorizontalOptions="Center"/>
 
         <Border Padding="10"
-                StrokeShape="RoundRectangle 10">
+                Margin="10"
+                StrokeShape="RoundRectangle 10"
+                BackgroundColor="{StaticResource Purple100}">
 
-            <Grid ColumnDefinitions="*, *, *"
-                  RowDefinitions="Auto, Auto, Auto, Auto">
+            <VerticalStackLayout>
+                <Grid ColumnDefinitions="*, *, *"
+                      RowDefinitions="Auto, Auto, Auto, Auto">
 
-                <Label Grid.Row="0" Grid.Column="0" Text="Refeições" TextColor="{StaticResource Purple100}"/>
+                    <Label Grid.Row="0" 
+                           Grid.ColumnSpan="3"
+                           Margin="10"
+                           FontSize="20"
+                           Text="Refeições" 
+                           TextColor="{StaticResource Purple300}" 
+                           HorizontalTextAlignment="Center"/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="Café da Manhã" TextColor="{StaticResource Purple300}"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="Almoço" TextColor="{StaticResource Purple300}"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="Jantar" TextColor="{StaticResource Purple300}"/>
+                    <Label Grid.Row="1" 
+                           Grid.Column="0"
+                           Margin="10"
+                           Text="Café da Manhã" 
+                           TextColor="{StaticResource Purple300}"
+                           HorizontalOptions="Center"/>
 
-                <Label Grid.Row="2" Grid.Column="0" Text="Entrenimento" TextColor="{StaticResource Purple100}"/>
+                    <Label Grid.Row="1" 
+                           Grid.Column="1"
+                           Margin="10"
+                           Text="Almoço" 
+                           TextColor="{StaticResource Purple300}"
+                           HorizontalOptions="Center"/>
 
-                <Label Grid.Row="3" Grid.Column="0" Text="Passeios a cavalo" TextColor="{StaticResource Purple100}"/>
-                <Label Grid.Row="3" Grid.Column="1" Text="Piscina" TextColor="{StaticResource Purple300}"/>
-                <Label Grid.Row="3" Grid.Column="2" Text="Recanto dos animais" TextColor="{StaticResource Purple300}"/>
-                
-            </Grid>
+                    <Label Grid.Row="1" 
+                           Grid.Column="2"
+                           Margin="10"
+                           Text="Jantar" 
+                           TextColor="{StaticResource Purple300}"
+                           HorizontalOptions="Center"/>
+
+                    <VerticalStackLayout>
+                        
+                    </VerticalStackLayout>
+                    
+                    <Label Grid.Row="2" 
+                           Grid.ColumnSpan="3"
+                           Margin="10"
+                           FontSize="20"
+                           Text="Entrenimento" 
+                           HorizontalTextAlignment="Center"
+                           TextColor="{StaticResource Purple300}"/>
+
+                    <Label Grid.Row="3" 
+                           Grid.Column="0"
+                           Margin="10"
+                           Text="Passeios a cavalo" 
+                           TextColor="{StaticResource Purple300}"
+                           HorizontalOptions="Center"/>
+
+                    <Label Grid.Row="3" 
+                           Grid.Column="1"
+                           Margin="10"
+                           Text="Piscina" 
+                           TextColor="{StaticResource Purple300}"
+                           HorizontalOptions="Center"/>
+
+                    <Label Grid.Row="3" 
+                           Grid.Column="2"
+                           Margin="10"
+                           Text="Recanto dos animais" 
+                           TextColor="{StaticResource Purple300}"
+                           HorizontalOptions="Center"/>
+
+                </Grid>
+            </VerticalStackLayout>
         </Border>
        
-
         <Button 
             Margin="10"
             Text="Voltar" 
