@@ -9,7 +9,7 @@
     <VerticalStackLayout Padding="10">
         <Label Text="Pousada Púrpura"
                FontFamily="Fleur"
-               FontSize="60"
+               FontSize="50"
                TextColor="{StaticResource Purple100}"
                HorizontalOptions="Center"/>
         
@@ -17,7 +17,7 @@
             Text="Estádia"
             TextColor="{StaticResource Purple100}"
             FontFamily="Courgette"
-            FontSize="50"
+            FontSize="40"
             HorizontalOptions="Center" />
 
         <Label
@@ -25,7 +25,8 @@
             TextColor="{StaticResource Purple100}"
             FontSize="20"
             FontFamily="Courgette"
-            HorizontalOptions="Center"/>
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"/>
 
         <Border Padding="10"
                 Margin="10"
@@ -105,9 +106,7 @@
         <Button 
             Margin="10"
             Text="Voltar" 
-            TextColor="{StaticResource Purple300}"
             Clicked="Button_Clicked"
-            BackgroundColor="{StaticResource Purple100}"
             FontFamily="Kalam"
             FontSize="18"/>
     </VerticalStackLayout>

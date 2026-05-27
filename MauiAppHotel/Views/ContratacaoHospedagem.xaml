@@ -7,7 +7,8 @@
              BackgroundColor="{StaticResource Purple200}">
 
     <VerticalStackLayout VerticalOptions="Center"
-                         Padding="10">
+                         Padding="5"
+                         Spacing="5">
         <Label Text="Pousada Púrpura"
                FontFamily="Fleur"
                FontSize="50"
@@ -18,7 +19,6 @@
                FontFamily="Courgette"
                FontSize="40"
                TextColor="{StaticResource Purple100}"
-               VerticalOptions="Center"
                HorizontalOptions="Center"/>
 
         <Border Padding="10"
@@ -65,7 +65,7 @@
                         StrokeShape="RoundRectangle 10" 
                         Margin="5"
                         BackgroundColor="{StaticResource Purple100}">
-                    <VerticalStackLayout>
+                     <VerticalStackLayout Spacing="5">
                         
                         <Label Text="Escolha sua Suíte"
                                TextTransform="Uppercase"
@@ -86,7 +86,7 @@
                         StrokeShape="RoundRectangle 10"
                         Margin="5"
                         BackgroundColor="{StaticResource Purple100}">
-                    <VerticalStackLayout>
+                    <VerticalStackLayout Spacing="5">
                         <Label Text="Período da Estadia" 
                                TextTransform="Uppercase"
                                FontSize="Subtitle"
@@ -116,20 +116,16 @@
                 </Border>
 
                 <Button 
-                    Margin="10" 
+                    Margin="5" 
                     Text="Avançar" 
-                    TextColor="{StaticResource Purple300}"
                     Clicked="Button_Clicked"
-                    BackgroundColor="{StaticResource Purple100}"
                     FontFamily="Kalam"
                     FontSize="18"/>
 
                 <Button 
-                    Margin="10" 
+                    Margin="5" 
                     Text="Voltar" 
-                    TextColor="{StaticResource Purple300}"
                     Clicked="Button_Clicked_1"
-                    BackgroundColor="{StaticResource Purple100}"
                     FontFamily="Kalam"
                     FontSize="18"/>
 

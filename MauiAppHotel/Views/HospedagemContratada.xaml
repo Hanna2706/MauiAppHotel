@@ -10,15 +10,15 @@
         <Label Text="Pousada Púrpura"
                Margin="10"
                FontFamily="Fleur"
-               FontSize="60"
+               FontSize="50"
                TextColor="{StaticResource Purple100}"
                HorizontalOptions="Center"/>
         <Label 
-            Text="Suíte Super Luxo"
+            Text="{Binding QuartoSelecionado.Descricao}"
             Margin="10"
             TextColor="{StaticResource Purple100}"
             FontFamily="Courgette"
-            FontSize="50"
+            FontSize="40"
             HorizontalOptions="Center" />
 
         <Border 
@@ -27,59 +27,80 @@
             Margin="10"
             BackgroundColor="{StaticResource Purple100}"
             >
-            <HorizontalStackLayout>
-                <HorizontalStackLayout>
+            <StackLayout Orientation="Horizontal">
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Adultos: "
                            TextColor="{StaticResource Purple200}"/>
-                    <Label Text="2"
+                    <Label Text="{Binding QntAdultos}"
                            TextColor="{StaticResource Purple300}"/>
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Crianças: "
                            TextColor="{StaticResource Purple200}"/>
-                    <Label Text="1"
+                    <Label Text="{Binding QntCriancas}"
                            TextColor="{StaticResource Purple300}"/>
                 </HorizontalStackLayout>
-            </HorizontalStackLayout>
+            </StackLayout>
         </Border>
 
         <Border 
             Padding="10"
             StrokeShape="RoundRectangle 10"
             Margin="10"
-            BackgroundColor="{StaticResource Purple100}"
-            >
+            BackgroundColor="{StaticResource Purple100}">
+            
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" TextColor="{StaticResource Purple200}"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" TextColor="{StaticResource Purple200}"/>
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia" TextColor="{StaticResource Purple200}"/>
+                <Label Grid.Row="0" Grid.Column="0" 
+                       Text="Check-in:" 
+                       TextColor="{StaticResource Purple200}"
+                       HorizontalTextAlignment="Center"/>
+                
+                <Label Grid.Row="0" Grid.Column="1" 
+                       Text="Check-out:" 
+                       TextColor="{StaticResource Purple200}"
+                       HorizontalTextAlignment="Center"/>
+                
+                <Label Grid.Row="0" Grid.Column="2" 
+                       Text="Estadia" 
+                       TextColor="{StaticResource Purple200}"
+                       HorizontalTextAlignment="Center"/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024" TextColor="{StaticResource Purple300}"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" TextColor="{StaticResource Purple300}"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="3" TextColor="{StaticResource Purple300}"/>
+                <Label Grid.Row="1" Grid.Column="0" 
+                       Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}" 
+                       TextColor="{StaticResource Purple300}"
+                       HorizontalTextAlignment="Center"/>
+                
+                <Label Grid.Row="1" Grid.Column="1" 
+                       Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}" 
+                       TextColor="{StaticResource Purple300}"
+                       HorizontalTextAlignment="Center"/>
+                
+                <Label Grid.Row="1" Grid.Column="2" 
+                       Text="{Binding Estadia}" 
+                       TextColor="{StaticResource Purple300}"
+                       HorizontalTextAlignment="Center"/>
+                
             </Grid>
         </Border>
 
         <Border Margin="10"
                 StrokeShape="RoundRectangle 10"
                 Padding="10"
-                BackgroundColor="{StaticResource Purple100}"
-                >
-            <HorizontalStackLayout>
+                BackgroundColor="{StaticResource Purple100}">
+            
+            <HorizontalStackLayout HorizontalOptions="Center">
                 <Label Text="Valor Total:"
                        TextColor="{StaticResource Purple200}"/>
-                <Label Text="R$ 750,00"
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}"
                        TextColor="{StaticResource Purple300}"/>
             </HorizontalStackLayout>
         </Border>
 
         <Button Text="Voltar"
-                TextColor="{StaticResource Purple300}"
                 HorizontalOptions="Center"
                 Clicked="Button_Clicked"
-                BackgroundColor="{StaticResource Purple100}"
                 FontFamily="Kalam"
                 FontSize="18"/>
     </VerticalStackLayout>
